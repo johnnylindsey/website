@@ -11,7 +11,7 @@ function App() {
   const phrases = ["is the best", "is amazing", "loves cookout", "is truly the best", "knows absolutely nothing", "can cook", "is Italian", "built this site", "loves rihanna",
                   "plays minecraft occasionally", "will finish this by xmas", "can no longer listen to travis scott", "loves kid cudi", "goes to uva", "owns a hamster",
                   "is moving to san francisco", "is bad at c++", "is struggling to come up with phrases", "prefers chicken parmesan", "prefers rigatoni", "is doing homework",
-                  "likes pho", "likes korean food", "likes empanadas", "is tired", "is sad", "is happy", "drank a red bull"];
+                  "likes pho", "likes korean food", "likes empanadas", "is tired", "is sad", "is happy", "drank a red bull", "doesnt understand"];
 
   function changeText() {
     clickCount++;
