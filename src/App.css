@@ -15,7 +15,7 @@ a.button1{
   border-radius:0.12em;
   box-sizing: border-box;
   text-decoration:none;
-  font-family:'Roboto',sans-serif;
+  font-family:'Noto Serif', 'Roboto', sans-serif;
   font-weight:300;
   color:#FFFFFF;
   text-align:center;
@@ -41,18 +41,69 @@ a.button1{
 }
 
 .App-header {
-  background-color:#a39f9f;
+  background-color:#557a95 ;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #edf5e1;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+/* CSS */
+.navButton {
+  margin:3px;
+  align-items: center;
+  background-color: #e1dad2;
+  border: 2px solid #000;
+  box-sizing: border-box;
+  color: #000;
+  cursor: pointer;
+  display: inline-flex;
+  fill: #000;
+  font-family: Inter,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: -.8px;
+  line-height: 24px;
+  min-width: 140px;
+  outline: 0;
+  padding: 0 17px;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.navButton:focus {
+  color: #000;
+}
+
+.navButton:hover {
+  border-color: #edf5e1;
+  color: #edf5e1;
+  fill: #edf5e1;
+}
+
+.navButton:active {
+  border-color: #000;
+  color: #000;
+  fill: #000;
+}
+
+@media (min-width: 768px) {
+  .navButton {
+    min-width: 170px;
+  }
 }
 
 @keyframes App-logo-spin {
@@ -61,5 +112,67 @@ a.button1{
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+<!-- HTML !-->
+<button class="button-56" role="button">Button 56</button>
+
+/* CSS */
+.button-56 {
+  align-items: center;
+  background-color: #fee6e3;
+  border: 2px solid #111;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #111;
+  cursor: pointer;
+  display: flex;
+  font-family: Inter,sans-serif;
+  font-size: 16px;
+  height: 48px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-56:after {
+  background-color: #111;
+  border-radius: 8px;
+  content: "";
+  display: block;
+  height: 48px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform .2s ease-out;
+  z-index: -1;
+}
+
+.button-56:hover:after {
+  transform: translate(0, 0);
+}
+
+.button-56:active {
+  background-color: #ffdeda;
+  outline: 0;
+}
+
+.button-56:hover {
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  .button-56 {
+    padding: 0 40px;
   }
 }
